@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projekt_KA
 {
-    public partial class Form3 : Form
+    public partial class UdomiŽivotinju : Form
     {
-        public Form3()
+        public UdomiŽivotinju()
         {
             InitializeComponent();
         }

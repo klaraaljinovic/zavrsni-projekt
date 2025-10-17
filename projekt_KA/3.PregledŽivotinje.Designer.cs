@@ -1,6 +1,6 @@
 ﻿namespace projekt_KA
 {
-    partial class Form3
+    partial class PregledŽivotinje
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PregledŽivotinje));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.prikaz = new System.Windows.Forms.Button();
             this.izlaz2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Location = new System.Drawing.Point(503, 50);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(285, 121);
             this.listBox1.TabIndex = 0;
             // 
             // prikaz
             // 
-            this.prikaz.Location = new System.Drawing.Point(12, 155);
+            this.prikaz.Location = new System.Drawing.Point(503, 192);
             this.prikaz.Name = "prikaz";
             this.prikaz.Size = new System.Drawing.Size(133, 32);
             this.prikaz.TabIndex = 1;
@@ -62,16 +62,16 @@
             this.izlaz2.Text = "izlaz";
             this.izlaz2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-68, -249);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1748, 737);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-189, -36);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1009, 601);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
-            // Form3
+            // PregledŽivotinje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,10 +79,10 @@
             this.Controls.Add(this.izlaz2);
             this.Controls.Add(this.prikaz);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Form3";
+            this.Controls.Add(this.pictureBox2);
+            this.Name = "PregledŽivotinje";
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,6 +92,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button prikaz;
         private System.Windows.Forms.Button izlaz2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

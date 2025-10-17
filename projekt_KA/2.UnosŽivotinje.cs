@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace projekt_KA
 {
-    public partial class Form2 : Form
+    public partial class UnosŽivotinje : Form
     {
-        public Form2()
+        public UnosŽivotinje()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace projekt_KA
             sw.WriteLine(unos);
             sw.Close();
             this.Hide();
-            Form1 izbor = new Form1();
+            Izbornik izbor = new Izbornik();
             izbor.ShowDialog();
             this.Close();
         }

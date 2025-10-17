@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace projekt_KA
 {
-    public partial class Form4 : Form
+    public partial class Filtriranje : Form
     {
-        public Form4()
+        public Filtriranje()
         {
             InitializeComponent();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

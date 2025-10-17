@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projekt_KA
 {
-    public partial class Form1 : Form
+    public partial class Izbornik : Form
     {
-        public Form1()
+        public Izbornik()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace projekt_KA
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 unos = new Form2();
+            UnosŽivotinje unos = new UnosŽivotinje();
             unos.ShowDialog();
             this.Close();
         }
@@ -39,7 +39,7 @@ namespace projekt_KA
         private void statistika_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form6 stat = new Form6();
+            Statistika stat = new Statistika();
             stat.ShowDialog();
             this.Close();
         }
@@ -47,7 +47,7 @@ namespace projekt_KA
         private void pregled_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 preg = new Form3();
+            PregledŽivotinje preg = new PregledŽivotinje();
             preg.ShowDialog();
             this.Close();
         }
