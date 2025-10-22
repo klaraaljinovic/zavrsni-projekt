@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace projekt_KA
@@ -18,7 +19,7 @@ namespace projekt_KA
         {
             InitializeComponent();
         }
-        string pime, ppasmina, pspol, pstatus, pnapomena, pdob, pdolazak;
+        string pime, ppasmina, pspol, pkastriran, pnapomena, pdob, pdolazak, pcjepljen;
 
         private void pasmina_Click(object sender, EventArgs e)
         {
@@ -32,12 +33,44 @@ namespace projekt_KA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox2.Text = ppasmina.ToString();
-            textBox1.Text = pime.ToString();
-            numericUpDown1.Text = pdob.ToString();
-            dateTimePicker1.Text = pdolazak.ToString();
-            textBox4.Text = pnapomena.ToString();
-            string unos = ppasmina + "|" + pime + "|" + pdob + "|" + pdolazak + "|" + pnapomena;
+            ppasmina = textBox2.Text;
+            pime = textBox1.Text;
+            pdob= numericUpDown1.Text;
+            pdolazak = dateTimePicker1.Text;
+            pnapomena = textBox4.Text;
+            if (musko.Checked)
+            {
+                pspol = "muško";
+            }
+            else
+            {
+                if (zensko.Checked)
+                {
+                    pspol = "žensko";
+                }
+                else
+                {
+                    pspol = "nepoznat";
+                }
+
+            }
+            if (checkBox2.Checked)
+            {
+                pkastriran = "kastriran";
+            }
+            else
+            {
+                pkastriran = "nekastriran";
+            }
+            if (checkBox1.Checked)
+            {
+                pcjepljen = "cjepljen";
+            }
+            else
+            {
+                pcjepljen = "necjepljen";
+            }
+            string unos = ppasmina + "|" + pime + "|" + pdob + "|" + pdolazak + "|" + pnapomena + "|" + pspol + "|" + pcjepljen + "|" + pkastriran;
             StreamWriter sw = new StreamWriter("pas.txt", true);
             sw.WriteLine(unos);
             sw.Close();
