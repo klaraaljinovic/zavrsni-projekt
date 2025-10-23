@@ -45,7 +45,7 @@
             // unos_životinje
             // 
             this.unos_životinje.Location = new System.Drawing.Point(36, 80);
-            this.unos_životinje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unos_životinje.Margin = new System.Windows.Forms.Padding(4);
             this.unos_životinje.Name = "unos_životinje";
             this.unos_životinje.Size = new System.Drawing.Size(187, 85);
             this.unos_životinje.TabIndex = 0;
@@ -56,7 +56,7 @@
             // pregled
             // 
             this.pregled.Location = new System.Drawing.Point(245, 80);
-            this.pregled.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pregled.Margin = new System.Windows.Forms.Padding(4);
             this.pregled.Name = "pregled";
             this.pregled.Size = new System.Drawing.Size(187, 85);
             this.pregled.TabIndex = 1;
@@ -67,7 +67,7 @@
             // filteri
             // 
             this.filteri.Location = new System.Drawing.Point(788, 190);
-            this.filteri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.filteri.Margin = new System.Windows.Forms.Padding(4);
             this.filteri.Name = "filteri";
             this.filteri.Size = new System.Drawing.Size(100, 49);
             this.filteri.TabIndex = 2;
@@ -77,7 +77,7 @@
             // izlaz
             // 
             this.izlaz.Location = new System.Drawing.Point(948, 15);
-            this.izlaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.izlaz.Margin = new System.Windows.Forms.Padding(4);
             this.izlaz.Name = "izlaz";
             this.izlaz.Size = new System.Drawing.Size(100, 28);
             this.izlaz.TabIndex = 3;
@@ -88,17 +88,18 @@
             // udomljavanje
             // 
             this.udomljavanje.Location = new System.Drawing.Point(701, 80);
-            this.udomljavanje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.udomljavanje.Margin = new System.Windows.Forms.Padding(4);
             this.udomljavanje.Name = "udomljavanje";
             this.udomljavanje.Size = new System.Drawing.Size(187, 85);
             this.udomljavanje.TabIndex = 4;
             this.udomljavanje.Text = "UDOMLJAVANJE";
             this.udomljavanje.UseVisualStyleBackColor = true;
+            this.udomljavanje.Click += new System.EventHandler(this.udomljavanje_Click);
             // 
             // statistika
             // 
             this.statistika.Location = new System.Drawing.Point(464, 80);
-            this.statistika.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.statistika.Margin = new System.Windows.Forms.Padding(4);
             this.statistika.Name = "statistika";
             this.statistika.Size = new System.Drawing.Size(187, 85);
             this.statistika.TabIndex = 5;
@@ -110,14 +111,14 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-864, -406);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(2116, 1168);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Form1
+            // Izbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,8 +130,8 @@
             this.Controls.Add(this.pregled);
             this.Controls.Add(this.unos_životinje);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Izbornik";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

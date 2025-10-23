@@ -19,7 +19,10 @@ namespace projekt_KA
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            UdomiŽivotinju dom = new UdomiŽivotinju();
+            dom.ShowDialog();
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -40,16 +40,16 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(671, 62);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Location = new System.Drawing.Point(393, 51);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(379, 148);
+            this.listBox1.Size = new System.Drawing.Size(633, 356);
             this.listBox1.TabIndex = 0;
             // 
             // prikaz
             // 
-            this.prikaz.Location = new System.Drawing.Point(671, 236);
-            this.prikaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.prikaz.Location = new System.Drawing.Point(393, 423);
+            this.prikaz.Margin = new System.Windows.Forms.Padding(4);
             this.prikaz.Name = "prikaz";
             this.prikaz.Size = new System.Drawing.Size(177, 39);
             this.prikaz.TabIndex = 1;
@@ -58,19 +58,20 @@
             // 
             // izlaz2
             // 
-            this.izlaz2.Location = new System.Drawing.Point(951, 15);
-            this.izlaz2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.izlaz2.Location = new System.Drawing.Point(926, 13);
+            this.izlaz2.Margin = new System.Windows.Forms.Padding(4);
             this.izlaz2.Name = "izlaz2";
             this.izlaz2.Size = new System.Drawing.Size(100, 28);
             this.izlaz2.TabIndex = 2;
             this.izlaz2.Text = "izlaz";
             this.izlaz2.UseVisualStyleBackColor = true;
+            this.izlaz2.Click += new System.EventHandler(this.izlaz2_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-160, -42);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1345, 740);
             this.pictureBox2.TabIndex = 4;
@@ -85,7 +86,7 @@
             this.Controls.Add(this.prikaz);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PregledŽivotinje";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
