@@ -34,7 +34,6 @@
             this.pasmina = new System.Windows.Forms.Label();
             this.vrsta = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.musko = new System.Windows.Forms.RadioButton();
             this.zensko = new System.Windows.Forms.RadioButton();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -47,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(791, 76);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 0;
@@ -93,24 +93,16 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(829, 187);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(813, 129);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 22);
-            this.textBox3.TabIndex = 5;
             // 
             // musko
             // 
             this.musko.AutoSize = true;
             this.musko.Location = new System.Drawing.Point(748, 238);
-            this.musko.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.musko.Margin = new System.Windows.Forms.Padding(4);
             this.musko.Name = "musko";
             this.musko.Size = new System.Drawing.Size(76, 20);
             this.musko.TabIndex = 6;
@@ -122,7 +114,7 @@
             // 
             this.zensko.AutoSize = true;
             this.zensko.Location = new System.Drawing.Point(855, 238);
-            this.zensko.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zensko.Margin = new System.Windows.Forms.Padding(4);
             this.zensko.Name = "zensko";
             this.zensko.Size = new System.Drawing.Size(82, 20);
             this.zensko.TabIndex = 7;
@@ -133,7 +125,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(803, 295);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(160, 22);
             this.numericUpDown1.TabIndex = 8;
@@ -151,7 +143,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(748, 384);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 10;
@@ -170,7 +162,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(748, 437);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(99, 20);
             this.checkBox1.TabIndex = 12;
@@ -181,7 +173,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(897, 437);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(106, 20);
             this.checkBox2.TabIndex = 13;
@@ -191,7 +183,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(855, 487);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(179, 22);
             this.textBox4.TabIndex = 14;
@@ -211,7 +203,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-424, -324);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1569, 1073);
             this.pictureBox1.TabIndex = 16;
@@ -228,11 +220,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Pas",
+            "Koza",
+            "Cincila",
+            "Konj",
+            "Maca"});
+            this.comboBox1.Location = new System.Drawing.Point(816, 133);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 18;
+            // 
             // UnosŽivotinje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 594);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox4);
@@ -244,14 +251,13 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.zensko);
             this.Controls.Add(this.musko);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.vrsta);
             this.Controls.Add(this.pasmina);
             this.Controls.Add(this.ime);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UnosŽivotinje";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -268,7 +274,6 @@
         private System.Windows.Forms.Label pasmina;
         private System.Windows.Forms.Label vrsta;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.RadioButton musko;
         private System.Windows.Forms.RadioButton zensko;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -281,5 +286,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

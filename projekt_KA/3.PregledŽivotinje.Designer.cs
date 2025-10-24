@@ -33,6 +33,8 @@
             this.prikaz = new System.Windows.Forms.Button();
             this.izlaz2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,8 +55,9 @@
             this.prikaz.Name = "prikaz";
             this.prikaz.Size = new System.Drawing.Size(177, 39);
             this.prikaz.TabIndex = 1;
-            this.prikaz.Text = "prikaži životinju";
+            this.prikaz.Text = "prikaži životinje";
             this.prikaz.UseVisualStyleBackColor = true;
+            this.prikaz.Click += new System.EventHandler(this.prikaz_Click);
             // 
             // izlaz2
             // 
@@ -77,11 +80,38 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Pas",
+            "Koza",
+            "Cincila",
+            "Konj",
+            "Maca"});
+            this.comboBox1.Location = new System.Drawing.Point(466, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(154, 24);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F);
+            this.label1.Location = new System.Drawing.Point(390, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "FILTERI";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // PregledŽivotinje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.izlaz2);
             this.Controls.Add(this.prikaz);
             this.Controls.Add(this.listBox1);
@@ -91,6 +121,7 @@
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -100,5 +131,7 @@
         private System.Windows.Forms.Button prikaz;
         private System.Windows.Forms.Button izlaz2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

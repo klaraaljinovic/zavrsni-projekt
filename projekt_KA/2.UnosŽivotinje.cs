@@ -35,7 +35,7 @@ namespace projekt_KA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pvrsta = textBox3.Text;
+            pvrsta = comboBox1.Text;
             ppasmina = textBox2.Text;
             pime = textBox1.Text;
             pdob= numericUpDown1.Text;
@@ -77,11 +77,63 @@ namespace projekt_KA
             {
                 pcjepljen = "necjepljen";
             }
-            string unos = IDt + "|" + pime + "|" + pvrsta +"|" + ppasmina + "|" + pdob + "|" + pdolazak + "|" + pnapomena + "|" + pspol + "|" + pcjepljen + "|" + pkastriran + "|";
-            StreamWriter sw = new StreamWriter("pas.txt", true);
-            sw.WriteLine(unos);
-            sw.Close();
-            IDt++;
+            string unos = IDt + "|" + pime + "|" + pvrsta +"|" + ppasmina + "|" + pdob  + "|" + pdolazak + "|" + pnapomena + "|" + pspol + "|" + pcjepljen + "|" + pkastriran + "|";
+            StreamReader srg = new StreamReader("Godine.txt", true);
+            string sGod = srg.ReadLine();
+            int God = int.Parse(sGod);
+            srg.Close();
+            God = int.Parse(pdob) + God;
+            File.WriteAllText(@"Godine.txt", "");
+            StreamWriter swg = new StreamWriter("Godine.txt", true);
+            swg.WriteLine(God);
+            swg.Close();
+
+            StreamReader sra = new StreamReader("Azil.txt", true);
+            string sAzil = sra.ReadLine();
+            int Azil = int.Parse(sAzil);
+            sra.Close();
+            Azil++;
+            File.WriteAllText(@"Azil.txt", "");
+            StreamWriter swa = new StreamWriter("Azil.txt", true);
+            swa.WriteLine(Azil);
+            swa.Close();
+
+            if (comboBox1.Text == "Pas")
+            {
+                StreamWriter sw = new StreamWriter("pas.txt", true);
+                sw.WriteLine(unos);
+                sw.Close();
+                IDt++;
+            }
+           else if (comboBox1.Text == "Koza")
+            {
+                StreamWriter sw = new StreamWriter("Koza.txt", true);
+                sw.WriteLine(unos);
+                sw.Close();
+                IDt++;
+            }
+            else if (comboBox1.Text == "Cincila")
+            {
+                StreamWriter sw = new StreamWriter("Cincila.txt", true);
+                sw.WriteLine(unos);
+                sw.Close();
+                IDt++;
+            }
+            else if (comboBox1.Text == "Konj")
+            {
+                StreamWriter sw = new StreamWriter("Konj.txt", true);
+                sw.WriteLine(unos);
+                sw.Close();
+                IDt++;
+            }
+            else if (comboBox1.Text == "Maca")
+            {
+                StreamWriter sw = new StreamWriter("Maca.txt", true);
+                sw.WriteLine(unos);
+                sw.Close();
+                IDt++;
+            }
+
             File.WriteAllText(@"ID.txt", "");
             StreamWriter sw1 = new StreamWriter("ID.txt", true);
             sw1.WriteLine(IDt);

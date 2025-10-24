@@ -33,7 +33,6 @@
             this.unos_životinje = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pregled = new System.Windows.Forms.Button();
-            this.filteri = new System.Windows.Forms.Button();
             this.izlaz = new System.Windows.Forms.Button();
             this.udomljavanje = new System.Windows.Forms.Button();
             this.statistika = new System.Windows.Forms.Button();
@@ -63,16 +62,6 @@
             this.pregled.Text = "PREGLED";
             this.pregled.UseVisualStyleBackColor = true;
             this.pregled.Click += new System.EventHandler(this.pregled_Click);
-            // 
-            // filteri
-            // 
-            this.filteri.Location = new System.Drawing.Point(788, 190);
-            this.filteri.Margin = new System.Windows.Forms.Padding(4);
-            this.filteri.Name = "filteri";
-            this.filteri.Size = new System.Drawing.Size(100, 49);
-            this.filteri.TabIndex = 2;
-            this.filteri.Text = "FILTERI";
-            this.filteri.UseVisualStyleBackColor = true;
             // 
             // izlaz
             // 
@@ -126,7 +115,6 @@
             this.Controls.Add(this.statistika);
             this.Controls.Add(this.udomljavanje);
             this.Controls.Add(this.izlaz);
-            this.Controls.Add(this.filteri);
             this.Controls.Add(this.pregled);
             this.Controls.Add(this.unos_životinje);
             this.Controls.Add(this.pictureBox1);
@@ -144,7 +132,6 @@
         private System.Windows.Forms.Button unos_životinje;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Button pregled;
-        private System.Windows.Forms.Button filteri;
         private System.Windows.Forms.Button izlaz;
         private System.Windows.Forms.Button udomljavanje;
         private System.Windows.Forms.Button statistika;
