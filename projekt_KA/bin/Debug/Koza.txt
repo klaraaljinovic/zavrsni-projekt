@@ -1,0 +1,3 @@
+2|Nikola|Koza|pamti|12|11. listopada 2025.|On ce zapamtit|muško|cjepljen|nekastriran|
+5|Mate|Koza|zaboravi|19|4. listopada 2025.|zaborav|muško|cjepljen|kastriran|
+7|Petar|Koza|Zg|13|10. listopada 2025.|pae|muško|cjepljen|nekastriran|
